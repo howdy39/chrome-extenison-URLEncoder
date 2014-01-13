@@ -3,7 +3,7 @@
 
   "name": "URLEncoder",
   "description": "This Extension can perform URLEncode and URLdecode quickly in browser action.",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "icons": {
       "16":  "images/main_icon/small.png",
