@@ -1,13 +1,6 @@
 $(function() {
 	init();
 	function init() {
-		// focus bug? @see http://blog.howdylikes.jp/entry/2014/02/01/160505
-		if(location.search !== "?foo") {
-			location.search = "?foo";
-			throw new Error;
-		}
-		$('#encode-target-text').focus();
-
 		var encodeType = localStorage.getItem('encodeType');
 		if (encodeType) {
 			$('#encode-type').val(encodeType);
