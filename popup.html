@@ -6,13 +6,21 @@
     <link href="css/popup.css" rel="stylesheet">
     <script src="lib/jquery/jquery-2.0.3.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="scripts/popup.js"></script>
+    <script src="scripts/popup.js" async=""></script>
   </head>
   <body>
     <div class="container">
       <div class="form-group">
-        <label for="encode-target-text">encode target text</label>
-        <textarea class="form-control" id="encode-target-text" rows="5" cols="80"></textarea>
+        <label for="encode-type">Encode type</label>
+        <select id="encode-type" class="form-control">
+          <option value="encodeURI">encodeURI</option>
+          <option value="encodeURIComponent">encodeURIComponent</option>
+          <option value="escape">escape</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="encode-target-text">Encode target text</label>
+        <textarea id="encode-target-text" class="form-control" rows="5" cols="80"></textarea>
       </div>
       <div class="form-group">
         <button id="encode-button" type="button" class="btn btn-default">
@@ -23,8 +31,8 @@
         </button>
       </div>
       <div class="form-group">
-        <label for="decode-target-text">decode target text</label>
-        <textarea class="form-control"  id="decode-target-text" rows="5" cols="80"></textarea>
+        <label for="decode-target-text">Decode target text</label>
+        <textarea id="decode-target-text" class="form-control" rows="5" cols="80"></textarea>
     </div>
   </body>
 </html>
